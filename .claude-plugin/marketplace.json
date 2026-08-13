@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "designmaxxing",
+  "description": "Evidence-based frontend design tooling for Claude Code.",
+  "owner": { "name": "Kenji Tubera" },
+  "plugins": [
+    {
+      "name": "designmaxxing",
+      "description": "Evidence-based frontend design review for Claude Code: commands that scan the rendered UI, score its life and distinctiveness, and redesign it with before/after proof — plus skills that make Claude build alive, distinctive interfaces by default.",
+      "category": "development",
+      "source": "./"
+    }
+  ]
+}
