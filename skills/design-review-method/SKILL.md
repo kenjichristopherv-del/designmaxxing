@@ -67,6 +67,11 @@ Channel B mechanics that save an hour each (verified, current as of 2026):
   screenshot crop ~350ms later (and once at ~16ms, to tell a transition from a jump).
 - Cross-origin stylesheets throw on `.cssRules` — catch it and report those sheets as
   unscanned rather than silently skipping them.
+- A local dev server on HTTPS with a **self-signed certificate** will be refused by the
+  browser tool (`ERR_CERT_AUTHORITY_INVALID`). Don't fight the cert: start a second instance
+  of the app on plain HTTP bound to `localhost` and audit that — Chrome treats `localhost` as
+  a trustworthy origin, so even `Secure`/`https_only` session cookies still work there. Stop
+  the extra instance when the audit ends.
 - Tailwind-default detection must match **computed hex values**, not class names — people
   copy the palette into custom CSS.
 - Contrast compliance is **WCAG 2.2 AA** (4.5:1 text, 3:1 large text and UI components).
@@ -118,6 +123,15 @@ look with another.
 | Severity | Bar |
 |---|---|
 | **BLOCKER** | Broken or exclusionary: page-level overflow, failed WCAG 2.2 AA contrast, invisible focus, keyboard-unreachable controls, unreadable text. Caps its category at 49; an accessibility BLOCKER caps the overall score at 59. |
+
+**Materiality qualifier.** A BLOCKER must block something a user came to do. A contrast or
+target-size failure on **essential content** — body text, labels, controls, data, navigation —
+is a BLOCKER and triggers the caps. The same failure on **incidental content** — a copyright
+line, a decorative caption, a footer flourish — is reported as HIGH with the same measurement
+and the same fix, but does not cap the grade: capping a whole app at D over one line of
+legalese misstates the design's quality and teaches the reader to ignore the caps. Say which
+way you classified it and why. (WCAG compliance is unaffected by this — an AA failure is an AA
+failure in the report either way; materiality governs the *score*, not the finding.)
 | **HIGH** | Clearly hurts usability or credibility: no hover feedback anywhere, blank screen while loading, primary CTA indistinguishable, mobile nav unusable, body text 120ch wide. |
 | **MED** | Noticeably unpolished to a non-designer: off-scale spacing, 12 arbitrary font sizes, drifting radii, spinner where a skeleton belongs. |
 | **LOW** | Refinement a designer would catch: default letter-spacing on display text, missing `text-wrap: balance`, harsh pure-black on white. |

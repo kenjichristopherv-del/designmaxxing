@@ -21,6 +21,10 @@ connected (Playwright MCP or Chrome DevTools MCP both work), drop to the `quick`
 the report with exactly what that means: no runtime pass, so hover coverage, computed censuses,
 and every screenshot judgment are **Not measured** — findings come from source only.
 
+If the dev server is HTTPS with a self-signed certificate, the browser tool will refuse it —
+start a second instance on plain HTTP at `localhost` and audit that instead (Chrome treats
+`localhost` as trustworthy, so `Secure` cookies still work); stop it when done.
+
 ## Phase 1 — Recon
 
 Before measuring anything, learn what you're measuring.

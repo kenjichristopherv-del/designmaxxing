@@ -1,10 +1,22 @@
 {
   "name": "designmaxxing",
-  "description": "Evidence-based frontend design review for Claude Code. Slash commands that scan the real rendered UI, measure what's wrong — dead interactions, template-default looks, drifting tokens — and redesign it in your codebase with before/after proof, plus skills that make Claude build alive, distinctive interfaces by default. Built for software engineers and vibe coders alike.",
-  "version": "0.1.0",
-  "author": { "name": "Kenji Tubera" },
+  "description": "Evidence-based frontend design review for Claude Code. Slash commands that scan the real rendered UI, measure what's wrong \u2014 dead interactions, template-default looks, drifting tokens \u2014 and redesign it in your codebase with before/after proof, plus skills that make Claude build alive, distinctive interfaces by default. Built for software engineers and vibe coders alike.",
+  "version": "0.1.1",
+  "author": {
+    "name": "Kenji Tubera"
+  },
   "homepage": "https://github.com/kenjichristopherv-del/designmaxxing",
   "repository": "https://github.com/kenjichristopherv-del/designmaxxing",
   "license": "Apache-2.0",
-  "keywords": ["design", "ui", "ux", "frontend", "design-review", "design-systems", "accessibility", "animation", "redesign"]
+  "keywords": [
+    "design",
+    "ui",
+    "ux",
+    "frontend",
+    "design-review",
+    "design-systems",
+    "accessibility",
+    "animation",
+    "redesign"
+  ]
 }
