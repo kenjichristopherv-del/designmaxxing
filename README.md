@@ -60,6 +60,16 @@ runs its static pass and says honestly what it couldn't measure.
 ## New here? Type one thing
 
 ```
+/designmaxxing:help http://localhost:3000
+```
+
+That is the whole product for most people. It looks at your app, measures what's actually
+wrong, fixes it, and shows you the before and after. It never hands you a list of other
+commands to go and run — everything below is for when you want to go deeper on one thing.
+
+Want the honest version first, without anything being changed?
+
+```
 /designmaxxing:roast http://localhost:3000
 ```
 
@@ -87,7 +97,8 @@ Type `/design` in Claude Code and they'll all filter into view.
 
 | Command | What it does |
 |---|---|
-| `/designmaxxing:roast` | **Start here if you're new.** The teardown in plain English — funny on the surface, measured underneath |
+| `/designmaxxing:help` | **The one that finishes.** Measures, decides, applies and proves it — the whole loop in one command, in plain English |
+| `/designmaxxing:roast` | The teardown, read-only — funny on the surface, measured underneath |
 | `/designmaxxing:scan` | The full 4-channel audit: graded report card across nine categories, findings ledger, prioritized redesign brief |
 | `/designmaxxing:brief` | Turns findings into a creative direction — palette, type pairing, motion identity — and stops for your pick |
 | `/designmaxxing:redesign` | The closer, and a writing command: applies the direction in-repo, re-renders, and proves it with a before/after contact sheet |
@@ -129,8 +140,9 @@ written — which is the difference between a Life Score you fix and one you nev
 ## Try it
 
 ```
-/designmaxxing:roast <url>       # start here if you want the honest version
-/designmaxxing:scan <url>        # start here if you want the full report card
+/designmaxxing:help <url>        # start here — it fixes it and shows you
+/designmaxxing:roast <url>       # if you want the honest version, read-only
+/designmaxxing:scan <url>        # if you want the full report card
 /designmaxxing:life <url>        # start here if your app feels dead and you want to know why
 /designmaxxing:diff              # start here before you commit UI changes
 ```
