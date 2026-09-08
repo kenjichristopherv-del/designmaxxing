@@ -67,6 +67,9 @@ That is the whole product for most people. It looks at your app, measures what's
 wrong, fixes it, and shows you the before and after. It never hands you a list of other
 commands to go and run — everything below is for when you want to go deeper on one thing.
 
+New to the plugin? **[USAGE.md](USAGE.md)** is the practical guide — how to drive it, when to
+reach past `help`, and the two habits that matter more than any command.
+
 Want the honest version first, without anything being changed?
 
 ```
